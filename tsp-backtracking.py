@@ -53,7 +53,7 @@ def get_all_ways(g, origin_vertex):
     return res
 
 
-def brutforce(g, ways):
+def backtracking(g, ways):
     best_weight = float('inf')
     best_path = None
 
@@ -71,4 +71,4 @@ def brutforce(g, ways):
 
 t = get_all_ways(graph, origin_vertex=v1)
 
-print(brutforce(graph, t))
+print(backtracking(graph, t))
