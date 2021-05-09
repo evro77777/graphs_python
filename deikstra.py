@@ -150,29 +150,3 @@ class Graph:
                     dist[node.index][1].append(node)
         return dist
 
-
-
-
-# a = Node("A")
-# b = Node("B")
-# c = Node("C")
-# d = Node("D")
-# e = Node("E")
-# f = Node("F")
-#
-#
-# w_graph = Graph.create_from_nodes([a, b, c, d, e, f])
-#
-# w_graph.connect(a, b, 5)
-# w_graph.connect(a, c, 10)
-# w_graph.connect(a, e, 2)
-# w_graph.connect(b, c, 2)
-# w_graph.connect(b, d, 4)
-# w_graph.connect(c, d, 7)
-# w_graph.connect(c, f, 10)
-# w_graph.connect(d, e, 3)
-#
-# # w_graph.print_adj_mat()
-# print([(weight, [n.data for n in node]) for (weight, node) in w_graph.dijkstra(a)])
-# print(w_graph.connections_from(0))
-
